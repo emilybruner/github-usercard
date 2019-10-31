@@ -118,7 +118,8 @@ function CreateCard(obj) {
   cardUsername.textContent = obj.data.login;
   cardLocation.textContent = `Followers: ${obj.data.location}`
   cardProfile.textContent = `Profile: `
-  profileLink.setAttribute = ("href", obj.data.html_url);
+  profileLink.href = obj.data.html_url;
+  profileLink.textContent = obj.data.html_url;
   cardFollowers.textContent = `Followers: ${obj.data.followers}`;
   cardFollowing.textContent = `Following: ${obj.data.following}`;
   cardBio.textContent = `Bio: ${obj.data.bio}`;
